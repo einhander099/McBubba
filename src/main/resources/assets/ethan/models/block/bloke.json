@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ethan:block/attachment",
+    "up": "ethan:block/attachment",
+    "north": "ethan:block/attachment",
+    "east": "ethan:block/attachment",
+    "south": "ethan:block/attachment",
+    "west": "ethan:block/attachment",
+    "particle": "ethan:block/attachment"
+  },
+  "render_type": "solid"
+}

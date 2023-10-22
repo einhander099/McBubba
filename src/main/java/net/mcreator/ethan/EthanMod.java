@@ -29,6 +29,9 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.ethan.init.EthanModItems;
+import net.mcreator.ethan.init.EthanModBlocks;
+
 import java.util.function.Supplier;
 import java.util.function.Function;
 import java.util.function.BiConsumer;
@@ -46,6 +49,10 @@ public class EthanMod {
 	public EthanMod() {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+		EthanModBlocks.REGISTRY.register(bus);
+
+		EthanModItems.REGISTRY.register(bus);
 
 	}
 

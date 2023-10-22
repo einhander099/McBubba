@@ -1,9 +1,27 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "Bloke",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bloke",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ethan/block/BlokeBlock.java",
+          "src/main/resources/assets/ethan/models/item/bloke.json",
+          "src/main/resources/assets/ethan/models/block/bloke.json",
+          "src/main/resources/assets/ethan/blockstates/bloke.json"
+        ]
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "block.ethan.bloke": "Bloke"
+    }
   },
   "foldersRoot": {
     "name": "~",
