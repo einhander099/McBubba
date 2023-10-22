@@ -1,0 +1,11 @@
+{
+  "_fv": 47,
+  "_type": "painting",
+  "definition": {
+    "texture": "attachment.png",
+    "width": 16,
+    "height": 16,
+    "title": "Blake Painting",
+    "author": "Blake"
+  }
+}

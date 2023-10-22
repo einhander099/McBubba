@@ -31,6 +31,16 @@
           "src/main/java/net/mcreator/ethan/block/BubbaBlock.java"
         ]
       }
+    },
+    {
+      "name": "BlakePainting",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blake_painting",
+      "metadata": {
+        "files": []
+      }
     }
   ],
   "variable_elements": [],
@@ -38,7 +48,9 @@
   "language_map": {
     "en_us": {
       "block.ethan.bubba": "Bubba",
-      "block.ethan.bloke": "Bloke"
+      "painting.ethan.blake_painting.title": "Blake Painting",
+      "block.ethan.bloke": "Bloke",
+      "painting.ethan.blake_painting.author": "Blake"
     }
   },
   "foldersRoot": {

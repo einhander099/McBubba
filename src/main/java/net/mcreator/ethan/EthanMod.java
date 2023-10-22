@@ -29,6 +29,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.ethan.init.EthanModPaintings;
 import net.mcreator.ethan.init.EthanModItems;
 import net.mcreator.ethan.init.EthanModBlocks;
 
@@ -53,6 +54,8 @@ public class EthanMod {
 		EthanModBlocks.REGISTRY.register(bus);
 
 		EthanModItems.REGISTRY.register(bus);
+
+		EthanModPaintings.REGISTRY.register(bus);
 
 	}
 
