@@ -8,7 +8,7 @@ version="1.0.0"
 displayName="Ethan"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://mcreator.net"
-authors="jbg17, MCreator"
+authors="einha, MCreator"
 
 [[dependencies.ethan]]
     modId="minecraft"
