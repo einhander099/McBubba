@@ -1,0 +1,26 @@
+{
+  "suitandtie": {
+    "sounds": [
+      {
+        "name": "ethan:suit-and-tie-_low-quality_-_1_",
+        "stream": false
+      }
+    ]
+  },
+  "tickle": {
+    "sounds": [
+      {
+        "name": "ethan:cartoon_tickle_sound_effect_tuberipper.com",
+        "stream": false
+      }
+    ]
+  },
+  "scorchedforestambiance": {
+    "sounds": [
+      {
+        "name": "ethan:fnaf_2_hallway_ambience_sound_effect_for_editing_tuberipper.com",
+        "stream": true
+      }
+    ]
+  }
+}

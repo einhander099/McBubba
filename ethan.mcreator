@@ -41,16 +41,60 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "SuitAndTie",
+      "type": "musicdisc",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "suit_and_tie",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ethan/models/item/suit_and_tie.json",
+          "src/main/java/net/mcreator/ethan/item/SuitAndTieItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "suitandtie",
+      "files": [
+        "suit-and-tie-_low-quality_-_1_"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "tickle",
+      "files": [
+        "cartoon_tickle_sound_effect_tuberipper.com"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "scorchedforestambiance",
+      "files": [
+        "fnaf_2_hallway_ambience_sound_effect_for_editing_tuberipper.com"
+      ],
+      "category": "music",
+      "subtitle": ""
+    }
+  ],
   "language_map": {
     "en_us": {
+      "subtitles.tickle": "",
+      "item.ethan.suit_and_tie.desc": "Groovy",
       "block.ethan.bubba": "Bubba",
+      "subtitles.suitandtie": "",
+      "subtitles.scorchedforestambiance": "",
       "painting.ethan.blake_painting.title": "Blake Painting",
       "block.ethan.bloke": "Bloke",
-      "painting.ethan.blake_painting.author": "Blake"
+      "painting.ethan.blake_painting.author": "Blake",
+      "item.ethan.suit_and_tie": "Suit And Tie"
     }
   },
   "foldersRoot": {

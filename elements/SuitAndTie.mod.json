@@ -1,0 +1,19 @@
+{
+  "_fv": 47,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Suit And Tie",
+    "texture": "img_8941",
+    "description": "Groovy",
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "specialInfo": [],
+    "hasGlow": false,
+    "music": {
+      "value": "CUSTOM:suitandtie"
+    },
+    "lengthInTicks": 1200,
+    "analogOutput": 0
+  }
+}

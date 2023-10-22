@@ -29,6 +29,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.ethan.init.EthanModSounds;
 import net.mcreator.ethan.init.EthanModPaintings;
 import net.mcreator.ethan.init.EthanModItems;
 import net.mcreator.ethan.init.EthanModBlocks;
@@ -50,7 +51,7 @@ public class EthanMod {
 	public EthanMod() {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-
+		EthanModSounds.REGISTRY.register(bus);
 		EthanModBlocks.REGISTRY.register(bus);
 
 		EthanModItems.REGISTRY.register(bus);

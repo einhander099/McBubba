@@ -1,6 +1,11 @@
 {
+  "subtitles.tickle": "",
+  "item.ethan.suit_and_tie.desc": "Groovy",
   "block.ethan.bubba": "Bubba",
+  "subtitles.suitandtie": "",
+  "subtitles.scorchedforestambiance": "",
   "painting.ethan.blake_painting.title": "Blake Painting",
   "block.ethan.bloke": "Bloke",
-  "painting.ethan.blake_painting.author": "Blake"
+  "painting.ethan.blake_painting.author": "Blake",
+  "item.ethan.suit_and_tie": "Suit And Tie"
 }
