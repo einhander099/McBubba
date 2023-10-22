@@ -29,9 +29,13 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.ethan.init.EthanModTabs;
 import net.mcreator.ethan.init.EthanModSounds;
+import net.mcreator.ethan.init.EthanModPotions;
 import net.mcreator.ethan.init.EthanModPaintings;
+import net.mcreator.ethan.init.EthanModMobEffects;
 import net.mcreator.ethan.init.EthanModItems;
+import net.mcreator.ethan.init.EthanModEntities;
 import net.mcreator.ethan.init.EthanModBlocks;
 
 import java.util.function.Supplier;
@@ -55,7 +59,12 @@ public class EthanMod {
 		EthanModBlocks.REGISTRY.register(bus);
 
 		EthanModItems.REGISTRY.register(bus);
+		EthanModEntities.REGISTRY.register(bus);
 
+		EthanModTabs.REGISTRY.register(bus);
+
+		EthanModMobEffects.REGISTRY.register(bus);
+		EthanModPotions.REGISTRY.register(bus);
 		EthanModPaintings.REGISTRY.register(bus);
 
 	}

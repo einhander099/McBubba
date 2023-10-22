@@ -35,6 +35,7 @@
     {
       "name": "BlakePainting",
       "type": "painting",
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blake_painting",
@@ -53,6 +54,82 @@
         "files": [
           "src/main/resources/assets/ethan/models/item/suit_and_tie.json",
           "src/main/java/net/mcreator/ethan/item/SuitAndTieItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Hallucination",
+      "type": "potioneffect",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hallucination",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ethan/potion/HallucinationMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "Cocaine",
+      "type": "potion",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cocaine",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "HallucinationEffect",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hallucination_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ethan/procedures/HallucinationEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Herobrine",
+      "type": "livingentity",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "herobrine",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ethan/client/renderer/HerobrineRenderer.java",
+          "src/main/java/net/mcreator/ethan/entity/HerobrineEntityProjectile.java",
+          "src/main/java/net/mcreator/ethan/entity/HerobrineEntity.java",
+          "src/main/resources/data/ethan/forge/biome_modifier/herobrine_biome_modifier.json",
+          "src/main/resources/assets/ethan/models/item/herobrine_spawn_egg.json"
         ]
       }
     }
@@ -86,15 +163,22 @@
   ],
   "language_map": {
     "en_us": {
-      "subtitles.tickle": "",
+      "item.ethan.herobrine_spawn_egg": "Herobrine Spawn Egg",
       "item.ethan.suit_and_tie.desc": "Groovy",
+      "item.minecraft.splash_potion.effect.cocaine": "Cloud of Cocaine",
+      "item.ethan.suit_and_tie": "Suit And Tie",
+      "entity.ethan.herobrine": "Herobrine",
+      "subtitles.tickle": "",
+      "item.minecraft.potion.effect.cocaine": "Cocaine",
       "block.ethan.bubba": "Bubba",
+      "effect.ethan.hallucination": "Hallucinating",
+      "item.minecraft.tipped_arrow.effect.cocaine": "Cocaine Laced Arrow",
       "subtitles.suitandtie": "",
       "subtitles.scorchedforestambiance": "",
       "painting.ethan.blake_painting.title": "Blake Painting",
       "block.ethan.bloke": "Bloke",
       "painting.ethan.blake_painting.author": "Blake",
-      "item.ethan.suit_and_tie": "Suit And Tie"
+      "item.minecraft.lingering_potion.effect.cocaine": "Lingering Cloud of Cocaine"
     }
   },
   "foldersRoot": {
