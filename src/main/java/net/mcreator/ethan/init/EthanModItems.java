@@ -16,6 +16,7 @@ import net.mcreator.ethan.EthanMod;
 
 public class EthanModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, EthanMod.MODID);
+	public static final RegistryObject<Item> BUBBA = block(EthanModBlocks.BUBBA);
 	public static final RegistryObject<Item> BLOKE = block(EthanModBlocks.BLOKE);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {

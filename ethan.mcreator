@@ -3,15 +3,32 @@
     {
       "name": "Bloke",
       "type": "block",
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bloke",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ethan/block/BlokeBlock.java",
           "src/main/resources/assets/ethan/models/item/bloke.json",
-          "src/main/resources/assets/ethan/models/block/bloke.json",
-          "src/main/resources/assets/ethan/blockstates/bloke.json"
+          "src/main/java/net/mcreator/ethan/block/BlokeBlock.java",
+          "src/main/resources/assets/ethan/blockstates/bloke.json",
+          "src/main/resources/assets/ethan/models/block/bloke.json"
+        ]
+      }
+    },
+    {
+      "name": "Bubba",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bubba",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ethan/blockstates/bubba.json",
+          "src/main/resources/assets/ethan/models/block/bubba.json",
+          "src/main/resources/assets/ethan/models/item/bubba.json",
+          "src/main/java/net/mcreator/ethan/block/BubbaBlock.java"
         ]
       }
     }
@@ -20,6 +37,7 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.ethan.bubba": "Bubba",
       "block.ethan.bloke": "Bloke"
     }
   },
