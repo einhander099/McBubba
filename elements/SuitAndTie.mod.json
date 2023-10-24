@@ -11,9 +11,9 @@
     "specialInfo": [],
     "hasGlow": false,
     "music": {
-      "value": "CUSTOM:suitandtie"
+      "value": "CUSTOM:suitandtietrim"
     },
-    "lengthInTicks": 1200,
+    "lengthInTicks": 500,
     "analogOutput": 0
   }
 }

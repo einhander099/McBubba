@@ -125,11 +125,27 @@
       "registry_name": "herobrine",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ethan/client/renderer/HerobrineRenderer.java",
-          "src/main/java/net/mcreator/ethan/entity/HerobrineEntityProjectile.java",
           "src/main/java/net/mcreator/ethan/entity/HerobrineEntity.java",
           "src/main/resources/data/ethan/forge/biome_modifier/herobrine_biome_modifier.json",
-          "src/main/resources/assets/ethan/models/item/herobrine_spawn_egg.json"
+          "src/main/resources/assets/ethan/models/item/herobrine_spawn_egg.json",
+          "src/main/java/net/mcreator/ethan/entity/HerobrineEntityProjectile.java",
+          "src/main/java/net/mcreator/ethan/client/renderer/HerobrineRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "Bruh",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bruh",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ethan/block/BruhBlock.java",
+          "src/main/resources/assets/ethan/blockstates/bruh.json",
+          "src/main/resources/assets/ethan/models/item/bruh.json",
+          "src/main/resources/assets/ethan/models/block/bruh.json"
         ]
       }
     }
@@ -159,6 +175,14 @@
       ],
       "category": "music",
       "subtitle": ""
+    },
+    {
+      "name": "suitandtietrim",
+      "files": [
+        "suit-and-tie-_low-quality_-_1_-_audiotrimmer.com_"
+      ],
+      "category": "neutral",
+      "subtitle": ""
     }
   ],
   "language_map": {
@@ -170,11 +194,13 @@
       "entity.ethan.herobrine": "Herobrine",
       "subtitles.tickle": "",
       "item.minecraft.potion.effect.cocaine": "Cocaine",
+      "subtitles.suitandtietrim": "",
       "block.ethan.bubba": "Bubba",
       "effect.ethan.hallucination": "Hallucinating",
       "item.minecraft.tipped_arrow.effect.cocaine": "Cocaine Laced Arrow",
       "subtitles.suitandtie": "",
       "subtitles.scorchedforestambiance": "",
+      "block.ethan.bruh": "Bruh",
       "painting.ethan.blake_painting.title": "Blake Painting",
       "block.ethan.bloke": "Bloke",
       "painting.ethan.blake_painting.author": "Blake",

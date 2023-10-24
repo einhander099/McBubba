@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ethan:block/watterson",
+    "up": "ethan:block/watterson",
+    "north": "ethan:block/watterson",
+    "east": "ethan:block/watterson",
+    "south": "ethan:block/watterson",
+    "west": "ethan:block/watterson",
+    "particle": "ethan:block/watterson"
+  },
+  "render_type": "solid"
+}

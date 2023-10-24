@@ -22,5 +22,13 @@
         "stream": true
       }
     ]
+  },
+  "suitandtietrim": {
+    "sounds": [
+      {
+        "name": "ethan:suit-and-tie-_low-quality_-_1_-_audiotrimmer.com_",
+        "stream": false
+      }
+    ]
   }
 }

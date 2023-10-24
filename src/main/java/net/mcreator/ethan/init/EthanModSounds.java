@@ -18,4 +18,5 @@ public class EthanModSounds {
 	public static final RegistryObject<SoundEvent> SUITANDTIE = REGISTRY.register("suitandtie", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ethan", "suitandtie")));
 	public static final RegistryObject<SoundEvent> TICKLE = REGISTRY.register("tickle", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ethan", "tickle")));
 	public static final RegistryObject<SoundEvent> SCORCHEDFORESTAMBIANCE = REGISTRY.register("scorchedforestambiance", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ethan", "scorchedforestambiance")));
+	public static final RegistryObject<SoundEvent> SUITANDTIETRIM = REGISTRY.register("suitandtietrim", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ethan", "suitandtietrim")));
 }

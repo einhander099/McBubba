@@ -22,6 +22,7 @@ public class EthanModItems {
 	public static final RegistryObject<Item> BLOKE = block(EthanModBlocks.BLOKE);
 	public static final RegistryObject<Item> SUIT_AND_TIE = REGISTRY.register("suit_and_tie", () -> new SuitAndTieItem());
 	public static final RegistryObject<Item> HEROBRINE_SPAWN_EGG = REGISTRY.register("herobrine_spawn_egg", () -> new ForgeSpawnEggItem(EthanModEntities.HEROBRINE, -1, -1, new Item.Properties()));
+	public static final RegistryObject<Item> BRUH = block(EthanModBlocks.BRUH);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
