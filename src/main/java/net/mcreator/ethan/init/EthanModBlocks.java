@@ -10,6 +10,7 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.ethan.block.ElementalAnvilBlock;
 import net.mcreator.ethan.block.BubbaBlock;
 import net.mcreator.ethan.block.BruhBlock;
 import net.mcreator.ethan.block.BlokeBlock;
@@ -20,4 +21,5 @@ public class EthanModBlocks {
 	public static final RegistryObject<Block> BUBBA = REGISTRY.register("bubba", () -> new BubbaBlock());
 	public static final RegistryObject<Block> BLOKE = REGISTRY.register("bloke", () -> new BlokeBlock());
 	public static final RegistryObject<Block> BRUH = REGISTRY.register("bruh", () -> new BruhBlock());
+	public static final RegistryObject<Block> ELEMENTAL_ANVIL = REGISTRY.register("elemental_anvil", () -> new ElementalAnvilBlock());
 }

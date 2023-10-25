@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ethan:block/bott_anvil",
+    "up": "ethan:block/top_anvil",
+    "north": "ethan:block/side_anvil",
+    "east": "ethan:block/side_anvil",
+    "south": "ethan:block/side_anvil",
+    "west": "ethan:block/side_anvil",
+    "particle": "ethan:block/bott_anvil"
+  },
+  "render_type": "solid"
+}

@@ -9,10 +9,10 @@
       "registry_name": "bloke",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ethan/models/item/bloke.json",
           "src/main/java/net/mcreator/ethan/block/BlokeBlock.java",
-          "src/main/resources/assets/ethan/blockstates/bloke.json",
-          "src/main/resources/assets/ethan/models/block/bloke.json"
+          "src/main/resources/assets/ethan/models/item/bloke.json",
+          "src/main/resources/assets/ethan/models/block/bloke.json",
+          "src/main/resources/assets/ethan/blockstates/bloke.json"
         ]
       }
     },
@@ -148,6 +148,96 @@
           "src/main/resources/assets/ethan/models/block/bruh.json"
         ]
       }
+    },
+    {
+      "name": "FireAffinity",
+      "type": "enchantment",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_affinity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ethan/enchantment/FireAffinityEnchantment.java"
+        ]
+      }
+    },
+    {
+      "name": "EnchantedBook",
+      "type": "item",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enchanted_book",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ethan/item/EnchantedBookItem.java",
+          "src/main/resources/assets/ethan/models/item/enchanted_book.json"
+        ]
+      }
+    },
+    {
+      "name": "ElementalAnvilGUi",
+      "type": "gui",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elemental_anvil_g_ui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ethan/world/inventory/ElementalAnvilGUiMenu.java",
+          "src/main/java/net/mcreator/ethan/client/gui/ElementalAnvilGUiScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "ElementalAnvil",
+      "type": "block",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elemental_anvil",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ethan/models/item/elemental_anvil.json",
+          "src/main/resources/assets/ethan/blockstates/elemental_anvil.json",
+          "src/main/java/net/mcreator/ethan/block/ElementalAnvilBlock.java",
+          "src/main/resources/assets/ethan/models/block/elemental_anvil.json"
+        ]
+      }
+    },
+    {
+      "name": "Anvilelement",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "anvilelement",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ethan/procedures/AnvilelementProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pick",
+      "type": "tool",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ethan/item/PickItem.java",
+          "src/main/resources/assets/ethan/models/item/pick.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -188,8 +278,11 @@
   "language_map": {
     "en_us": {
       "item.ethan.herobrine_spawn_egg": "Herobrine Spawn Egg",
-      "item.ethan.suit_and_tie.desc": "Groovy",
       "item.minecraft.splash_potion.effect.cocaine": "Cloud of Cocaine",
+      "item.ethan.suit_and_tie.desc": "Groovy",
+      "item.ethan.enchanted_book": "Enchanted Book",
+      "block.ethan.elemental_anvil": "Elemental Anvil",
+      "item.ethan.pick": "Pick",
       "item.ethan.suit_and_tie": "Suit And Tie",
       "entity.ethan.herobrine": "Herobrine",
       "subtitles.tickle": "",
@@ -198,6 +291,7 @@
       "block.ethan.bubba": "Bubba",
       "effect.ethan.hallucination": "Hallucinating",
       "item.minecraft.tipped_arrow.effect.cocaine": "Cocaine Laced Arrow",
+      "enchantment.ethan.fire_affinity": "Fire Affinity",
       "subtitles.suitandtie": "",
       "subtitles.scorchedforestambiance": "",
       "block.ethan.bruh": "Bruh",
