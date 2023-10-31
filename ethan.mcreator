@@ -228,20 +228,6 @@
       }
     },
     {
-      "name": "Pick",
-      "type": "tool",
-      "sortid": 15,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ethan/item/PickItem.java",
-          "src/main/resources/assets/ethan/models/item/pick.json"
-        ]
-      }
-    },
-    {
       "name": "ElementalAnvilCombine",
       "type": "procedure",
       "sortid": 16,
@@ -298,6 +284,41 @@
           "src/main/resources/data/minecraft/tags/items/armor_and_tools_tag.json"
         ]
       }
+    },
+    {
+      "name": "Smelting",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smelting",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ethan/procedures/SmeltingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -337,7 +358,6 @@
   ],
   "language_map": {
     "en_us": {
-      "item.ethan.pick": "Pick",
       "item.minecraft.potion.effect.cocaine": "Cocaine",
       "subtitles.suitandtietrim": "",
       "effect.ethan.hallucination": "Hallucinating",

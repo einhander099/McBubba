@@ -33,9 +33,5 @@ public class EthanModTabs {
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(EthanModItems.HEROBRINE_SPAWN_EGG.get());
 		}
-
-		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-			tabData.accept(EthanModItems.PICK.get());
-		}
 	}
 }
