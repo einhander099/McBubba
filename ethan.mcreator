@@ -285,6 +285,19 @@
           "src/main/resources/data/minecraft/tags/items/elemental_enchantments.json"
         ]
       }
+    },
+    {
+      "name": "ArmorAndToolsTag",
+      "type": "tag",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armor_and_tools_tag",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/armor_and_tools_tag.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
