@@ -39,6 +39,7 @@ import net.mcreator.ethan.init.EthanModItems;
 import net.mcreator.ethan.init.EthanModEntities;
 import net.mcreator.ethan.init.EthanModEnchantments;
 import net.mcreator.ethan.init.EthanModBlocks;
+import net.mcreator.ethan.init.EthanModBlockEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -59,7 +60,7 @@ public class EthanMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		EthanModSounds.REGISTRY.register(bus);
 		EthanModBlocks.REGISTRY.register(bus);
-
+		EthanModBlockEntities.REGISTRY.register(bus);
 		EthanModItems.REGISTRY.register(bus);
 		EthanModEntities.REGISTRY.register(bus);
 		EthanModEnchantments.REGISTRY.register(bus);

@@ -6,9 +6,12 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.ethan.world.inventory.ElementalAnvilGUiMenu;
+import net.mcreator.ethan.network.ElementalAnvilGUiButtonMessage;
+import net.mcreator.ethan.EthanMod;
 
 import java.util.HashMap;
 
@@ -19,6 +22,7 @@ public class ElementalAnvilGUiScreen extends AbstractContainerScreen<ElementalAn
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_combine;
 
 	public ElementalAnvilGUiScreen(ElementalAnvilGUiMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -65,6 +69,7 @@ public class ElementalAnvilGUiScreen extends AbstractContainerScreen<ElementalAn
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+		guiGraphics.drawString(this.font, Component.translatable("gui.ethan.elemental_anvil_g_ui.label_elemental_anvil"), 6, 7, -12829636, false);
 	}
 
 	@Override
@@ -75,5 +80,13 @@ public class ElementalAnvilGUiScreen extends AbstractContainerScreen<ElementalAn
 	@Override
 	public void init() {
 		super.init();
+		button_combine = Button.builder(Component.translatable("gui.ethan.elemental_anvil_g_ui.button_combine"), e -> {
+			if (true) {
+				EthanMod.PACKET_HANDLER.sendToServer(new ElementalAnvilGUiButtonMessage(0, x, y, z));
+				ElementalAnvilGUiButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
+		}).bounds(this.leftPos + 69, this.topPos + 43, 61, 20).build();
+		guistate.put("button:button_combine", button_combine);
+		this.addRenderableWidget(button_combine);
 	}
 }

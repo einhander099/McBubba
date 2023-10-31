@@ -171,8 +171,8 @@
       "registry_name": "enchanted_book",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ethan/item/EnchantedBookItem.java",
-          "src/main/resources/assets/ethan/models/item/enchanted_book.json"
+          "src/main/resources/assets/ethan/models/item/enchanted_book.json",
+          "src/main/java/net/mcreator/ethan/item/EnchantedBookItem.java"
         ]
       }
     },
@@ -185,6 +185,7 @@
       "registry_name": "elemental_anvil_g_ui",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/ethan/network/ElementalAnvilGUiButtonMessage.java",
           "src/main/java/net/mcreator/ethan/world/inventory/ElementalAnvilGUiMenu.java",
           "src/main/java/net/mcreator/ethan/client/gui/ElementalAnvilGUiScreen.java"
         ]
@@ -199,10 +200,11 @@
       "registry_name": "elemental_anvil",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ethan/models/item/elemental_anvil.json",
           "src/main/resources/assets/ethan/blockstates/elemental_anvil.json",
+          "src/main/resources/assets/ethan/models/block/elemental_anvil.json",
           "src/main/java/net/mcreator/ethan/block/ElementalAnvilBlock.java",
-          "src/main/resources/assets/ethan/models/block/elemental_anvil.json"
+          "src/main/java/net/mcreator/ethan/block/entity/ElementalAnvilBlockEntity.java",
+          "src/main/resources/assets/ethan/models/item/elemental_anvil.json"
         ]
       }
     },
@@ -236,6 +238,51 @@
         "files": [
           "src/main/java/net/mcreator/ethan/item/PickItem.java",
           "src/main/resources/assets/ethan/models/item/pick.json"
+        ]
+      }
+    },
+    {
+      "name": "ElementalAnvilCombine",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elemental_anvil_combine",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ethan/procedures/ElementalAnvilCombineProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PickaxeTag",
+      "type": "tag",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pickaxe_tag",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/tag_pickaxe_group.json"
+        ]
+      }
+    },
+    {
+      "name": "ElementalEnchantments",
+      "type": "tag",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elemental_enchantments",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/elemental_enchantments.json"
         ]
       }
     }
@@ -277,25 +324,27 @@
   ],
   "language_map": {
     "en_us": {
+      "item.ethan.pick": "Pick",
+      "item.minecraft.potion.effect.cocaine": "Cocaine",
+      "subtitles.suitandtietrim": "",
+      "effect.ethan.hallucination": "Hallucinating",
+      "subtitles.suitandtie": "",
+      "painting.ethan.blake_painting.title": "Blake Painting",
       "item.ethan.herobrine_spawn_egg": "Herobrine Spawn Egg",
       "item.minecraft.splash_potion.effect.cocaine": "Cloud of Cocaine",
       "item.ethan.suit_and_tie.desc": "Groovy",
       "item.ethan.enchanted_book": "Enchanted Book",
       "block.ethan.elemental_anvil": "Elemental Anvil",
-      "item.ethan.pick": "Pick",
       "item.ethan.suit_and_tie": "Suit And Tie",
       "entity.ethan.herobrine": "Herobrine",
       "subtitles.tickle": "",
-      "item.minecraft.potion.effect.cocaine": "Cocaine",
-      "subtitles.suitandtietrim": "",
       "block.ethan.bubba": "Bubba",
-      "effect.ethan.hallucination": "Hallucinating",
       "item.minecraft.tipped_arrow.effect.cocaine": "Cocaine Laced Arrow",
+      "gui.ethan.elemental_anvil_g_ui.button_combine": "Combine",
       "enchantment.ethan.fire_affinity": "Fire Affinity",
-      "subtitles.suitandtie": "",
+      "gui.ethan.elemental_anvil_g_ui.label_elemental_anvil": "Elemental Anvil",
       "subtitles.scorchedforestambiance": "",
       "block.ethan.bruh": "Bruh",
-      "painting.ethan.blake_painting.title": "Blake Painting",
       "block.ethan.bloke": "Bloke",
       "painting.ethan.blake_painting.author": "Blake",
       "item.minecraft.lingering_potion.effect.cocaine": "Lingering Cloud of Cocaine"

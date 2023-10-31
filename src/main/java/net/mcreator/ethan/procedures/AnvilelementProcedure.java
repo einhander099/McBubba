@@ -1,26 +1,43 @@
 package net.mcreator.ethan.procedures;
 
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.event.level.BlockEvent;
+
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.network.chat.Component;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.resources.ResourceLocation;
 
-import net.mcreator.ethan.init.EthanModItems;
 import net.mcreator.ethan.init.EthanModEnchantments;
 
+import javax.annotation.Nullable;
+
+@Mod.EventBusSubscriber
 public class AnvilelementProcedure {
+	@SubscribeEvent
+	public static void onBlockBreak(BlockEvent.BreakEvent event) {
+		execute(event, event.getPlayer());
+	}
+
 	public static void execute(Entity entity) {
+		execute(null, entity);
+	}
+
+	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
 		ItemStack itemInHand = ItemStack.EMPTY;
 		double EnchantLevel = 0;
 		itemInHand = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
 		EnchantLevel = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(EthanModEnchantments.FIRE_AFFINITY.get());
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == EthanModItems.PICK.get()
-				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(EthanModEnchantments.FIRE_AFFINITY.get()) > 0) {
-			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal("Message"), false);
+		if (itemInHand.is(ItemTags.create(new ResourceLocation("minecraft:tag_pickaxe_group"))) && itemInHand.getEnchantmentLevel(EthanModEnchantments.FIRE_AFFINITY.get()) > 0) {
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 60, (int) EnchantLevel, false, true));
 		}
 	}
 }
