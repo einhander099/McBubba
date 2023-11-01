@@ -27,14 +27,15 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "Can be applied to: Armor",
-      "\\ Weapons",
-      "\\ Tools"
+      "Can be applied to: Armor, Weapons, Tools"
     ],
     "hasGlow": true,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onCrafted": {
+      "name": "EnchantedBookPropertyValueProvider"
+    },
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

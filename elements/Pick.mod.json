@@ -25,12 +25,6 @@
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "onRightClickedInAir": {
-      "name": "Anvilelement"
-    },
-    "onItemInUseTick": {
-      "name": "Anvilelement"
-    },
     "onBlockDestroyedWithTool": {
       "name": "Anvilelement"
     }
