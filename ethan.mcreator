@@ -125,11 +125,11 @@
       "registry_name": "herobrine",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/ethan/client/renderer/HerobrineRenderer.java",
+          "src/main/java/net/mcreator/ethan/entity/HerobrineEntityProjectile.java",
           "src/main/java/net/mcreator/ethan/entity/HerobrineEntity.java",
           "src/main/resources/data/ethan/forge/biome_modifier/herobrine_biome_modifier.json",
-          "src/main/resources/assets/ethan/models/item/herobrine_spawn_egg.json",
-          "src/main/java/net/mcreator/ethan/entity/HerobrineEntityProjectile.java",
-          "src/main/java/net/mcreator/ethan/client/renderer/HerobrineRenderer.java"
+          "src/main/resources/assets/ethan/models/item/herobrine_spawn_egg.json"
         ]
       }
     },
@@ -142,10 +142,10 @@
       "registry_name": "bruh",
       "metadata": {
         "files": [
+          "src/main/resources/assets/ethan/models/block/bruh.json",
           "src/main/java/net/mcreator/ethan/block/BruhBlock.java",
           "src/main/resources/assets/ethan/blockstates/bruh.json",
-          "src/main/resources/assets/ethan/models/item/bruh.json",
-          "src/main/resources/assets/ethan/models/block/bruh.json"
+          "src/main/resources/assets/ethan/models/item/bruh.json"
         ]
       }
     },
@@ -171,8 +171,8 @@
       "registry_name": "enchanted_book",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ethan/models/item/enchanted_book.json",
-          "src/main/java/net/mcreator/ethan/item/EnchantedBookItem.java"
+          "src/main/java/net/mcreator/ethan/item/EnchantedBookItem.java",
+          "src/main/resources/assets/ethan/models/item/enchanted_book.json"
         ]
       }
     },
@@ -200,11 +200,11 @@
       "registry_name": "elemental_anvil",
       "metadata": {
         "files": [
+          "src/main/resources/assets/ethan/models/item/elemental_anvil.json",
           "src/main/resources/assets/ethan/blockstates/elemental_anvil.json",
-          "src/main/resources/assets/ethan/models/block/elemental_anvil.json",
           "src/main/java/net/mcreator/ethan/block/ElementalAnvilBlock.java",
           "src/main/java/net/mcreator/ethan/block/entity/ElementalAnvilBlockEntity.java",
-          "src/main/resources/assets/ethan/models/item/elemental_anvil.json"
+          "src/main/resources/assets/ethan/models/block/elemental_anvil.json"
         ]
       }
     },
@@ -223,6 +223,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -391,6 +407,7 @@
       "item.ethan.suit_and_tie": "Suit And Tie",
       "entity.ethan.herobrine": "Herobrine",
       "subtitles.tickle": "",
+      "block.ethan.gilded_diamond": "Gilded Diamond",
       "block.ethan.bubba": "Bubba",
       "item.minecraft.tipped_arrow.effect.cocaine": "Cocaine Laced Arrow",
       "gui.ethan.elemental_anvil_g_ui.button_combine": "Combine",
