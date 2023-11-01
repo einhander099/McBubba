@@ -223,6 +223,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -358,11 +374,6 @@
   ],
   "language_map": {
     "en_us": {
-      "item.minecraft.potion.effect.cocaine": "Cocaine",
-      "subtitles.suitandtietrim": "",
-      "effect.ethan.hallucination": "Hallucinating",
-      "subtitles.suitandtie": "",
-      "painting.ethan.blake_painting.title": "Blake Painting",
       "item.ethan.herobrine_spawn_egg": "Herobrine Spawn Egg",
       "item.minecraft.splash_potion.effect.cocaine": "Cloud of Cocaine",
       "item.ethan.suit_and_tie.desc": "Groovy",
@@ -370,14 +381,19 @@
       "block.ethan.elemental_anvil": "Elemental Anvil",
       "item.ethan.suit_and_tie": "Suit And Tie",
       "entity.ethan.herobrine": "Herobrine",
+      "item.minecraft.potion.effect.cocaine": "Cocaine",
       "subtitles.tickle": "",
+      "subtitles.suitandtietrim": "",
+      "effect.ethan.hallucination": "Hallucinating",
       "block.ethan.bubba": "Bubba",
       "item.minecraft.tipped_arrow.effect.cocaine": "Cocaine Laced Arrow",
       "gui.ethan.elemental_anvil_g_ui.button_combine": "Combine",
       "enchantment.ethan.fire_affinity": "Fire Affinity",
       "gui.ethan.elemental_anvil_g_ui.label_elemental_anvil": "Elemental Anvil",
+      "subtitles.suitandtie": "",
       "subtitles.scorchedforestambiance": "",
       "block.ethan.bruh": "Bruh",
+      "painting.ethan.blake_painting.title": "Blake Painting",
       "block.ethan.bloke": "Bloke",
       "painting.ethan.blake_painting.author": "Blake",
       "item.minecraft.lingering_potion.effect.cocaine": "Lingering Cloud of Cocaine"
