@@ -24,6 +24,7 @@ public class EthanModTabs {
 
 		if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(EthanModBlocks.ELEMENTAL_ANVIL.get().asItem());
+			tabData.accept(EthanModBlocks.GILDED_DIAMOND.get().asItem());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {

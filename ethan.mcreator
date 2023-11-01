@@ -319,6 +319,26 @@
           }
         ]
       }
+    },
+    {
+      "name": "GildedDiamond",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_diamond",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ethan/models/block/gilded_diamond.json",
+          "src/main/resources/assets/ethan/models/item/gilded_diamond.json",
+          "src/main/resources/data/ethan/worldgen/placed_feature/gilded_diamond.json",
+          "src/main/resources/data/ethan/worldgen/configured_feature/gilded_diamond.json",
+          "src/main/resources/data/ethan/forge/biome_modifier/gilded_diamond_biome_modifier.json",
+          "src/main/java/net/mcreator/ethan/block/GildedDiamondBlock.java",
+          "src/main/java/net/mcreator/ethan/world/features/ores/GildedDiamondFeature.java",
+          "src/main/resources/assets/ethan/blockstates/gilded_diamond.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -371,6 +391,7 @@
       "item.ethan.suit_and_tie": "Suit And Tie",
       "entity.ethan.herobrine": "Herobrine",
       "subtitles.tickle": "",
+      "block.ethan.gilded_diamond": "Gilded Diamond",
       "block.ethan.bubba": "Bubba",
       "item.minecraft.tipped_arrow.effect.cocaine": "Cocaine Laced Arrow",
       "gui.ethan.elemental_anvil_g_ui.button_combine": "Combine",

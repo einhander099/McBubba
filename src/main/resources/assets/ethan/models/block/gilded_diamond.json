@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ethan:block/gilded_diamond_bttm",
+    "up": "ethan:block/gilded_diamond_top",
+    "north": "ethan:block/gd_anim",
+    "east": "ethan:block/gd_anim",
+    "south": "ethan:block/gd_anim",
+    "west": "ethan:block/gd_anim",
+    "particle": "ethan:block/gilded_diamond_bttm"
+  },
+  "render_type": "solid"
+}

@@ -26,6 +26,7 @@ public class EthanModItems {
 	public static final RegistryObject<Item> BRUH = block(EthanModBlocks.BRUH);
 	public static final RegistryObject<Item> ENCHANTED_BOOK = REGISTRY.register("enchanted_book", () -> new EnchantedBookItem());
 	public static final RegistryObject<Item> ELEMENTAL_ANVIL = block(EthanModBlocks.ELEMENTAL_ANVIL);
+	public static final RegistryObject<Item> GILDED_DIAMOND = block(EthanModBlocks.GILDED_DIAMOND);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

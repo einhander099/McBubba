@@ -36,6 +36,7 @@ import net.mcreator.ethan.init.EthanModPaintings;
 import net.mcreator.ethan.init.EthanModMobEffects;
 import net.mcreator.ethan.init.EthanModMenus;
 import net.mcreator.ethan.init.EthanModItems;
+import net.mcreator.ethan.init.EthanModFeatures;
 import net.mcreator.ethan.init.EthanModEntities;
 import net.mcreator.ethan.init.EthanModEnchantments;
 import net.mcreator.ethan.init.EthanModBlocks;
@@ -65,7 +66,7 @@ public class EthanMod {
 		EthanModEntities.REGISTRY.register(bus);
 		EthanModEnchantments.REGISTRY.register(bus);
 		EthanModTabs.REGISTRY.register(bus);
-
+		EthanModFeatures.REGISTRY.register(bus);
 		EthanModMobEffects.REGISTRY.register(bus);
 		EthanModPotions.REGISTRY.register(bus);
 		EthanModPaintings.REGISTRY.register(bus);

@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "ethan:gilded_diamond",
+  "step": "underground_ores"
+}
