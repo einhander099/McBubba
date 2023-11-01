@@ -15,12 +15,13 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.ethan.init.EthanModMenus;
-import net.mcreator.ethan.init.EthanModItems;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -78,18 +79,23 @@ public class ElementalAnvilGUiMenu extends AbstractContainerMenu implements Supp
 					});
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 25, 44) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 16, 26) {
 			private final int slot = 0;
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return EthanModItems.ENCHANTED_BOOK.get() == stack.getItem();
+				return stack.is(ItemTags.create(new ResourceLocation("tag_pickaxe_group")));
 			}
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 79, 44) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 43, 26) {
 			private final int slot = 1;
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return stack.is(ItemTags.create(new ResourceLocation("elemental_enchantments")));
+			}
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 133, 44) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 142, 26) {
 			private final int slot = 2;
 
 			@Override
