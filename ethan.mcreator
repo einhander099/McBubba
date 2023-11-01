@@ -25,10 +25,10 @@
       "registry_name": "bubba",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ethan/blockstates/bubba.json",
-          "src/main/resources/assets/ethan/models/block/bubba.json",
           "src/main/resources/assets/ethan/models/item/bubba.json",
-          "src/main/java/net/mcreator/ethan/block/BubbaBlock.java"
+          "src/main/resources/assets/ethan/models/block/bubba.json",
+          "src/main/java/net/mcreator/ethan/block/BubbaBlock.java",
+          "src/main/resources/assets/ethan/blockstates/bubba.json"
         ]
       }
     },
@@ -335,6 +335,65 @@
           }
         ]
       }
+    },
+    {
+      "name": "Airchest",
+      "type": "loottable",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "airchest",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ethan/loot_tables/blocks/airchest.json"
+        ]
+      }
+    },
+    {
+      "name": "Texturereplace",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "texturereplace",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ethan/procedures/TexturereplaceProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "EnchantedBookPropertyValueProvider",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enchanted_book_property_value_provider",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ethan/procedures/EnchantedBookPropertyValueProviderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Airrecipe",
+      "type": "recipe",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "airrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ethan/recipes/airrecipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -375,8 +434,8 @@
   "language_map": {
     "en_us": {
       "item.ethan.herobrine_spawn_egg": "Herobrine Spawn Egg",
-      "item.minecraft.splash_potion.effect.cocaine": "Cloud of Cocaine",
       "item.ethan.suit_and_tie.desc": "Groovy",
+      "item.minecraft.splash_potion.effect.cocaine": "Cloud of Cocaine",
       "item.ethan.enchanted_book": "Enchanted Book",
       "block.ethan.elemental_anvil": "Elemental Anvil",
       "item.ethan.suit_and_tie": "Suit And Tie",

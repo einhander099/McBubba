@@ -11,6 +11,8 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.ethan.init.EthanModItems;
+
 import java.util.List;
 import java.util.Collections;
 
@@ -29,6 +31,6 @@ public class BubbaBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(this, 1));
+		return Collections.singletonList(new ItemStack(EthanModItems.ENCHANTED_BOOK.get(), 20));
 	}
 }
