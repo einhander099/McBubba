@@ -25,10 +25,10 @@
       "registry_name": "bubba",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ethan/blockstates/bubba.json",
-          "src/main/resources/assets/ethan/models/block/bubba.json",
           "src/main/resources/assets/ethan/models/item/bubba.json",
-          "src/main/java/net/mcreator/ethan/block/BubbaBlock.java"
+          "src/main/resources/assets/ethan/models/block/bubba.json",
+          "src/main/java/net/mcreator/ethan/block/BubbaBlock.java",
+          "src/main/resources/assets/ethan/blockstates/bubba.json"
         ]
       }
     },
@@ -384,14 +384,13 @@
       "subtitles.suitandtie": "",
       "painting.ethan.blake_painting.title": "Blake Painting",
       "item.ethan.herobrine_spawn_egg": "Herobrine Spawn Egg",
-      "item.minecraft.splash_potion.effect.cocaine": "Cloud of Cocaine",
       "item.ethan.suit_and_tie.desc": "Groovy",
+      "item.minecraft.splash_potion.effect.cocaine": "Cloud of Cocaine",
       "item.ethan.enchanted_book": "Enchanted Book",
       "block.ethan.elemental_anvil": "Elemental Anvil",
       "item.ethan.suit_and_tie": "Suit And Tie",
       "entity.ethan.herobrine": "Herobrine",
       "subtitles.tickle": "",
-      "block.ethan.gilded_diamond": "Gilded Diamond",
       "block.ethan.bubba": "Bubba",
       "item.minecraft.tipped_arrow.effect.cocaine": "Cocaine Laced Arrow",
       "gui.ethan.elemental_anvil_g_ui.button_combine": "Combine",
